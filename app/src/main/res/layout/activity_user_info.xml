@@ -83,16 +83,16 @@
                 a:layout_below="@+id/label_user_gender"
                 a:layout_alignParentStart="true">
                 <RadioButton
-                    a:id="@+id/radioButton3"
+                    a:id="@+id/genderRadio1"
                     a:text="@string/label_radio_male"
                     style="@style/form_item.radio" />
                 <RadioButton
                     a:text="@string/label_radio_female"
-                    a:id="@+id/radioButton4"
+                    a:id="@+id/genderRadio2"
                     style="@style/form_item.radio" />
                 <RadioButton
                     a:text="@string/label_radio_other"
-                    a:id="@+id/radioButton5"
+                    a:id="@+id/genderRadio3"
                     style="@style/form_item.radio" />
             </RadioGroup>
         </RelativeLayout>

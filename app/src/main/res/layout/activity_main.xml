@@ -10,29 +10,19 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="in.pipecast.movierecommender.MainActivity"
-    android:background="@color/mainScreenBackground"
+    android:background="@color/colorPrimaryDark"
     android:onClick="goToMainform">
 
     <ImageView
         app:srcCompat="@drawable/icon"
         android:id="@+id/main_logo"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp" />
+        style="@style/home_screen_logo"
+        android:layout_marginTop="116dp" />
 
     <TextView
         android:text="@string/app_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="39dp"
         android:id="@+id/main_logo_text"
-        android:textAllCaps="false"
-        android:textAlignment="viewStart"
-        android:textSize="30sp"
-        android:textColor="?android:attr/panelColorForeground"
-        android:fontFamily="cursive"
         android:layout_below="@+id/main_logo"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        style="@style/home_screen_title" />
 </RelativeLayout>
