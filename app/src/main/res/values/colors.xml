@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="mainScreenBackground">#42486a</color>
-    <color name="innerScreenBackground">#fdfdf8</color>
+    <color name="innerScreenBackground">#eef3fa</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="colorPrimary">#303F9F</color>

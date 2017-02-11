@@ -1,4 +1,15 @@
 <resources>
-    <string name="app_name">MovieRecommender</string>
+    <string name="app_name">Movie Recommender</string>
     <string name="app_title">Movie Recommender</string>
+    <string name="form_legend">Basic Details</string>
+    <string name="label_user_name">Name:</string>
+    <string name="label_user_age">Age:</string>
+    <string name="label_user_gender">Gender:</string>
+    <string name="label_radio_male">Male</string>
+    <string name="label_radio_female">Female</string>
+    <string name="label_radio_other">Other</string>
+    <string name="label_user_occupation">Occupation:</string>
+    <string name="recommendation_button_text">Bring it On!</string>
+
+
 </resources>

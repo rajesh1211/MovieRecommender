@@ -1,32 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_user_info"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    a:id="@+id/activity_user_info"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:paddingBottom="@dimen/activity_vertical_margin"
+    a:paddingLeft="@dimen/activity_horizontal_margin"
+    a:paddingRight="@dimen/activity_horizontal_margin"
+    a:paddingTop="@dimen/activity_vertical_margin"
     tools:context="in.pipecast.movierecommender.UserInfoActivity"
-    android:background="@color/innerScreenBackground">
+    a:background="@color/innerScreenBackground">
 
-    <TextView
-        android:text="Main User info taking activity will come here"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="191dp"
-        android:id="@+id/textView2"
-        android:textSize="36sp" />
+    <RelativeLayout
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:id="@+id/inner_layout"
+        a:layout_marginLeft="20dp"
+        a:layout_marginRight="20dp"
+        a:layout_alignParentTop="true"
+        a:layout_centerHorizontal="true">
 
-    <Button
-        android:text="Button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="74dp"
-        android:id="@+id/button" />
+        <TextView
+            a:id="@+id/form_legend"
+            a:text="@string/form_legend"
+            style="@style/form_legend"
+            a:layout_alignParentTop="true"
+            a:layout_alignParentStart="true" />
+
+        <RelativeLayout
+            a:layout_width="match_parent"
+            a:layout_below="@+id/form_legend"
+            a:id="@+id/form_group1"
+            style="@style/form_group"
+            >
+            <TextView
+                a:text="@string/label_user_name"
+                a:id="@+id/label_user_name"
+                style="@style/form_item.label" />
+
+            <EditText
+                a:id="@+id/user_name"
+                style="@style/form_item.text"
+                a:inputType="textPersonName"
+                a:layout_below="@+id/label_user_name"
+                a:layout_alignParentStart="true"
+                a:hint="Name" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            a:id="@+id/form_group2"
+            a:layout_width="match_parent"
+            a:layout_below="@+id/form_group1"
+            style="@style/form_group"
+            >
+            <TextView
+                a:text="@string/label_user_age"
+                a:id="@+id/label_user_age"
+                style="@style/form_item.label" />
+
+            <EditText
+                a:id="@+id/user_age"
+                style="@style/form_item.text"
+                a:layout_below="@+id/label_user_age"
+                a:layout_alignParentStart="true"
+                a:hint="Age"
+                a:inputType="number" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            a:id="@+id/form_group3"
+            a:layout_width="match_parent"
+            a:layout_below="@+id/form_group2"
+            style="@style/form_group">
+            <TextView
+                a:text="@string/label_user_gender"
+                a:id="@+id/label_user_gender"
+                style="@style/form_item.label" />
+
+            <RadioGroup
+                a:id="@+id/gender_radio_group"
+                style="@style/form_item.gender_radio_group"
+                a:layout_below="@+id/label_user_gender"
+                a:layout_alignParentStart="true">
+                <RadioButton
+                    a:id="@+id/radioButton3"
+                    a:text="@string/label_radio_male"
+                    style="@style/form_item.radio" />
+                <RadioButton
+                    a:text="@string/label_radio_female"
+                    a:id="@+id/radioButton4"
+                    style="@style/form_item.radio" />
+                <RadioButton
+                    a:text="@string/label_radio_other"
+                    a:id="@+id/radioButton5"
+                    style="@style/form_item.radio" />
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            a:id="@+id/form_group4"
+            a:layout_width="match_parent"
+            a:layout_below="@+id/form_group3"
+            style="@style/form_group">
+            <TextView
+                a:text="@string/label_user_occupation"
+                a:id="@+id/label_user_occupation"
+                style="@style/form_item.label" />
+
+            <Spinner
+                a:id="@+id/occupation_spinner"
+                a:spinnerMode="dialog"
+                a:layout_below="@+id/label_user_occupation"
+                a:layout_alignParentStart="true"
+                style="@style/form_item.spinner"/>
+
+        </RelativeLayout>
+
+        <Button
+            a:text="@string/recommendation_button_text"
+            a:id="@+id/recommendation_button"
+            a:layout_marginTop="12dp"
+            a:layout_below="@+id/form_group4"
+            a:layout_centerHorizontal="true"
+            style="@style/button.primary.recommendation_button"
+            a:onClick="getRecommendations" />
+
+
+    </RelativeLayout>
 </RelativeLayout>

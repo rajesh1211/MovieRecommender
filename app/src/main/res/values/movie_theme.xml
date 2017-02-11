@@ -5,4 +5,75 @@
     <style name="MovieTheme" parent="android:Theme.NoTitleBar.Fullscreen">
 
     </style>
+
+    <style name="form_legend">
+        <item name="android:textColor">#27313A</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">normal|bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">24dp</item>
+    </style>
+
+    <style name="form_group">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+    </style>
+
+    <style name="form_item">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+        <style name="form_item.label">
+            <item name="android:textColor">#27313A</item>
+            <item name="android:textStyle">normal|bold</item>
+            <item name="android:textSize">18sp</item>
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:layout_marginBottom">6dp</item>
+        </style>
+
+        <style name="form_item.text">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:background">@drawable/border</item>
+            <item name="android:padding">10dp</item>
+        </style>
+
+        <style name="form_item.gender_radio_group">
+            <item name="android:orientation">horizontal</item>
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+        </style>
+
+        <style name="form_item.radio">
+            <item name="android:layout_width">0dp</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:layout_weight">1</item>
+        </style>
+
+        <style name="form_item.spinner">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+        </style>
+
+    <style name="button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="button.primary">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textColor">@android:color/background_light</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="button.primary.recommendation_button">
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+
 </resources>

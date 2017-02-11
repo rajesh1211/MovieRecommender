@@ -18,9 +18,29 @@ public class MainActivity extends AppCompatActivity {
         //Remove notification bar
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
+
+        final MainActivity temp_obj = this;
+        //Redirecting after a second
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                long seconds_later = System.currentTimeMillis() + 2000;
+                while (System.currentTimeMillis() < seconds_later) {
+                    System.out.println("Redirecting");
+                    synchronized (this) {
+                        try{
+                            wait(seconds_later - System.currentTimeMillis());
+                        }catch (Exception e) {}
+
+                        Intent i = new Intent(temp_obj , UserInfoActivity.class);
+                        startActivity(i);
+                    }
+                }
+            }
+        }).start();
     }
 
-    public void go_to_main_form(View v) {
+    public void goToMainform(View v) {
         Intent i = new Intent(this, UserInfoActivity.class);
         startActivity(i);
     }
