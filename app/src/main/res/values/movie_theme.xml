@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="main_background_color">#FF148C39</color>
+    <style name="MovieTheme" parent="android:Theme.NoTitleBar.Fullscreen">
+
+    </style>
+</resources>
